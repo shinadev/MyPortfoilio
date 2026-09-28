@@ -1,0 +1,199 @@
+-- Table structure for table `abouts`
+CREATE TABLE `abouts` (
+-- Dumping data for table `abouts`
+-- Table structure for table `blogs`
+CREATE TABLE `blogs` (
+-- Dumping data for table `blogs`
+-- Table structure for table `companies`
+CREATE TABLE `companies` (
+  `created_at` timestamp NULL DEFAULT NULL,
+-- Table structure for table `contacts`
+CREATE TABLE `contacts` (
+-- Dumping data for table `contacts`
+-- Table structure for table `customers`
+CREATE TABLE `customers` (
+  `created_at` timestamp NULL DEFAULT NULL,
+-- Table structure for table `experiences`
+CREATE TABLE `experiences` (
+-- Dumping data for table `experiences`
+-- Table structure for table `jobs`
+CREATE TABLE `jobs` (
+  `created_at` int(10) UNSIGNED NOT NULL
+-- Table structure for table `migrations`
+CREATE TABLE `migrations` (
+-- Dumping data for table `migrations`
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2018_08_08_100000_create_telescope_entries_table', 1),
+(4, '2019_02_21_200244_create_customers_table', 1),
+(5, '2019_02_25_230826_create_companies_table', 1),
+(6, '2019_03_18_232347_create_jobs_table', 1),
+(7, '2019_12_05_042612_create_skill_table', 1),
+(8, '2019_12_05_042943_create_project_table', 1),
+(9, '2019_12_05_043041_create_service_table', 1),
+(10, '2019_12_05_043145_create_experience_table', 1),
+(11, '2019_12_05_043502_create_blog_table', 1),
+(12, '2019_12_05_051140_create_contact_table', 1),
+(13, '2019_12_05_220422_create_about_table', 1);
+-- Table structure for table `password_resets`
+CREATE TABLE `password_resets` (
+  `created_at` timestamp NULL DEFAULT NULL
+-- Table structure for table `projects`
+CREATE TABLE `projects` (
+-- Dumping data for table `projects`
+-- Table structure for table `services`
+CREATE TABLE `services` (
+-- Dumping data for table `services`
+-- Table structure for table `skills`
+CREATE TABLE `skills` (
+-- Dumping data for table `skills`
+-- Table structure for table `telescope_entries`
+CREATE TABLE `telescope_entries` (
+  `created_at` datetime DEFAULT NULL
+-- Dumping data for table `telescope_entries`
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+(1, '909f6db7-1d86-4241-b42b-b80ac1918f9c', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"test\",\"migrations\"],\"sql\":\"select * from information_schema.tables where table_schema = ? and table_name = ?\",\"time\":\"1.22\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(2, '909f6db7-3cc3-4fa8-8d8f-75c97c4e3666', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `migrations` (`id` int unsigned not null auto_increment primary key, `migration` varchar(255) not null, `batch` int not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"28.54\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(5, '909f6db7-633d-4ca9-94d2-c70c153e5e51', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `users` (`id` int unsigned not null auto_increment primary key, `name` varchar(255) not null, `email` varchar(255) not null, `email_verified_at` timestamp null, `password` varchar(255) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"27.75\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2014_10_12_000000_create_users_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(6, '909f6db7-6b99-4723-b619-7405d42a7acb', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `users` add unique `users_email_unique`(`email`)\",\"time\":\"20.84\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2014_10_12_000000_create_users_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(7, '909f6db7-6ce9-407e-aa9c-f9a99c1f3772', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2014_10_12_000000_create_users_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.53\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(8, '909f6db7-7768-40dc-9beb-e648ea81cfec', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `password_resets` (`email` varchar(255) not null, `token` varchar(255) not null, `created_at` timestamp null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"25.58\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2014_10_12_100000_create_password_resets_table.php\",\"line\":20,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(9, '909f6db7-7f01-42d5-81f3-0980a3823a2b', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `password_resets` add index `password_resets_email_index`(`email`)\",\"time\":\"18.86\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2014_10_12_100000_create_password_resets_table.php\",\"line\":20,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(10, '909f6db7-802d-4266-96a0-692155f31ef5', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2014_10_12_100000_create_password_resets_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.52\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(11, '909f6db7-8b65-479c-b336-0bd1dc3f1b01', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `telescope_entries` (`sequence` bigint unsigned not null auto_increment primary key, `uuid` char(36) not null, `batch_id` char(36) not null, `family_hash` varchar(255) null, `should_display_on_index` tinyint(1) not null default \'1\', `type` varchar(20) not null, `content` longtext not null, `created_at` datetime null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"27.18\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(12, '909f6db7-9530-4fd8-b885-a9f6ab0bb2e6', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries` add unique `telescope_entries_uuid_unique`(`uuid`)\",\"time\":\"24.28\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(13, '909f6db7-9c58-42e5-be1d-c85ba561f646', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries` add index `telescope_entries_batch_id_index`(`batch_id`)\",\"time\":\"17.73\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(14, '909f6db7-a342-4644-b2f6-9f1ed88945b3', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries` add index `telescope_entries_type_should_display_on_index_index`(`type`, `should_display_on_index`)\",\"time\":\"17.17\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(15, '909f6db7-a9db-4fcb-a020-124406005e5f', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries` add index `telescope_entries_family_hash_index`(`family_hash`)\",\"time\":\"16.45\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(16, '909f6db7-b33e-4fd2-adf0-a7ecc8b38e46', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `telescope_entries_tags` (`entry_uuid` char(36) not null, `tag` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"23.31\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(17, '909f6db7-ba83-4dcc-8228-e5b46eae3a1b', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries_tags` add index `telescope_entries_tags_entry_uuid_tag_index`(`entry_uuid`, `tag`)\",\"time\":\"18.05\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(18, '909f6db7-c0e8-49c5-9b94-f0a88bb8ee0f', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries_tags` add index `telescope_entries_tags_tag_index`(`tag`)\",\"time\":\"15.82\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(19, '909f6db7-e140-4d98-9649-19f02bee91e6', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `telescope_entries_tags` add constraint `telescope_entries_tags_entry_uuid_foreign` foreign key (`entry_uuid`) references `telescope_entries` (`uuid`) on delete cascade\",\"time\":\"82.32\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(20, '909f6db7-eb7b-4e65-9a45-1363c2d1b1b2', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `telescope_monitoring` (`tag` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"25.38\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(21, '909f6db7-eca1-49e9-aea2-3597b77937e7', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2018_08_08_100000_create_telescope_entries_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.31\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(22, '909f6db7-f7dc-49f6-9085-bfc2c35fa12a', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `customers` (`id` bigint unsigned not null auto_increment primary key, `company_id` int unsigned not null, `name` varchar(255) not null, `email` varchar(255) not null, `active` int not null, `image` varchar(255) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"27.36\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_02_21_200244_create_customers_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(23, '909f6db7-f922-402d-b127-a71870c4f02a', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_02_21_200244_create_customers_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.51\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(24, '909f6db8-0453-4394-9040-b71d231b2398', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `companies` (`id` bigint unsigned not null auto_increment primary key, `name` varchar(255) not null, `phone` varchar(255) not null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"26.91\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_02_25_230826_create_companies_table.php\",\"line\":21,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(25, '909f6db8-0584-4d94-85bd-a28129c8a32c', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_02_25_230826_create_companies_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.33\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(26, '909f6db8-15dd-402a-99d2-42879c6dd5d7', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `jobs` (`id` bigint unsigned not null auto_increment primary key, `queue` varchar(255) not null, `payload` longtext not null, `attempts` tinyint unsigned not null, `reserved_at` int unsigned null, `available_at` int unsigned not null, `created_at` int unsigned not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"40.25\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_03_18_232347_create_jobs_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(27, '909f6db8-1d48-4623-aced-233c3bea658f', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `jobs` add index `jobs_queue_index`(`queue`)\",\"time\":\"18.37\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_03_18_232347_create_jobs_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(28, '909f6db8-1e91-440d-838f-3c1bc671873e', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_03_18_232347_create_jobs_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.55\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(29, '909f6db8-293c-4526-a27d-f20673f90b39', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `skills` (`id` int unsigned not null auto_increment primary key, `uniqueid` varchar(255) not null, `css` int not null, `javascript` int not null, `wordpress` int not null, `php` int not null, `jquery` int not null, `mysql` int not null, `angular` int not null, `html` int not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"25.63\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_042612_create_skill_table.php\",\"line\":27,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(30, '909f6db8-30cf-4879-8869-772276c20ede', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `skills` add unique `skills_uniqueid_unique`(`uniqueid`)\",\"time\":\"18.75\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_042612_create_skill_table.php\",\"line\":27,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(31, '909f6db8-3214-422f-b899-35ccf38464ca', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_042612_create_skill_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.72\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(32, '909f6db8-3d74-44d8-af80-5172832da3c2', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `projects` (`project_id` int unsigned not null auto_increment primary key, `uniqueid` varchar(255) not null, `project_name` varchar(255) not null, `project_image` varchar(255) not null, `project_descr` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"27.73\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_042943_create_project_table.php\",\"line\":22,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(33, '909f6db8-4547-4526-a636-481a1bc7429d', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `projects` add unique `projects_uniqueid_unique`(`uniqueid`)\",\"time\":\"19.46\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_042943_create_project_table.php\",\"line\":22,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(34, '909f6db8-46a7-489f-9c68-23d9995019be', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_042943_create_project_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.50\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(35, '909f6db8-51af-467d-86ed-918a3888cb55', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `services` (`service_id` int unsigned not null auto_increment primary key, `uniqueid` varchar(255) not null, `type` varchar(255) not null, `service_name` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"26.77\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_043041_create_service_table.php\",\"line\":22,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(36, '909f6db8-5a40-4a5d-a359-c49fb1ac65bc', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `services` add unique `services_uniqueid_unique`(`uniqueid`)\",\"time\":\"21.36\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_043041_create_service_table.php\",\"line\":22,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(37, '909f6db8-5bb4-4692-bb46-4b6a0217c8f6', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_043041_create_service_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.94\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:29'),
+(38, '909f6db8-6823-4b4d-b070-a880dda9ad8d', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `experiences` (`experience_id` int unsigned not null auto_increment primary key, `uniqueid` varchar(255) not null, `pos_name` varchar(255) not null, `pos_company` varchar(255) not null, `pos_descr` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"30.12\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_043145_create_experience_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(39, '909f6db8-7062-4db5-839c-5dc75f970b70', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `experiences` add unique `experiences_uniqueid_unique`(`uniqueid`)\",\"time\":\"20.67\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_043145_create_experience_table.php\",\"line\":24,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(40, '909f6db8-719f-4b1b-bda6-874dccf89d12', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_043145_create_experience_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.61\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(41, '909f6db8-7c27-4a27-a3cf-e9f95d81fa29', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `blogs` (`blog_id` int unsigned not null auto_increment primary key, `blog_title` varchar(255) not null, `blog_image` varchar(255) not null, `blog_descr` varchar(255) not null, `blog_link` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"25.30\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_043502_create_blog_table.php\",\"line\":23,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(42, '909f6db8-7e90-45e7-8be8-35975f277efe', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_043502_create_blog_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"5.34\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(43, '909f6db8-8b5e-4d3d-85fb-a1acbf7e73cc', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `contacts` (`contact_id` int unsigned not null auto_increment primary key, `uniqueid` varchar(255) not null, `contact_address` varchar(255) not null, `contact_email` varchar(255) not null, `contact_no` varchar(255) not null, `contact_website` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"30.47\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_051140_create_contact_table.php\",\"line\":23,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(44, '909f6db8-92fe-418c-9cae-d4d6bc5ed0cd', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"alter table `contacts` add unique `contacts_uniqueid_unique`(`uniqueid`)\",\"time\":\"19.04\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_051140_create_contact_table.php\",\"line\":23,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(45, '909f6db8-9433-45ec-a303-b7b4be743b40', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_051140_create_contact_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.36\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(46, '909f6db8-a01b-49af-8f24-076ccda1d224', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[],\"sql\":\"create table `abouts` (`about_id` int unsigned not null auto_increment primary key, `fname` varchar(255) not null, `mname` varchar(255) not null, `lname` varchar(255) not null, `pimage` varchar(255) not null, `uniqueid` varchar(255) not null, `descr` varchar(255) not null, `birthday` varchar(255) not null, `age` varchar(255) not null, `email` varchar(255) not null, `interests` varchar(255) not null, `website` varchar(255) not null, `study` varchar(255) not null, `twitter` varchar(255) not null, `degree` varchar(255) not null, `city` varchar(255) not null) default character set utf8mb4 collate \'utf8mb4_unicode_ci\'\",\"time\":\"28.94\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\database\\\\migrations\\\\2019_12_05_220422_create_about_table.php\",\"line\":33,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(47, '909f6db8-a165-4c36-899b-db61ab9bffa1', '909f6db8-a21b-4fdb-841c-fb81c8bfb754', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"2019_12_05_220422_create_about_table\",1],\"sql\":\"insert into `migrations` (`migration`, `batch`) values (?, ?)\",\"time\":\"2.62\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:42:30'),
+(49, '909f6e08-bd2e-479c-9341-7f6b5aa1e899', '909f6e08-c1de-4255-b345-1f22bb948dd9', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"test\",\"migrations\"],\"sql\":\"select * from information_schema.tables where table_schema = ? and table_name = ?\",\"time\":\"0.84\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\artisan\",\"line\":37,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:43:22'),
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+(69, '909f6e4a-860c-4a9b-bd6e-cbdfbf7ada6f', '909f6e4a-8ba1-4026-9036-c950e8b6e0d8', NULL, 1, 'query', '{\"connection\":\"mysql\",\"bindings\":[\"harshchaludia@gmail.com\",\"harshchaludia@gmail.com\",\"$2y$10$HdcUpFm82\\/i32qoLEays6eL2vTZZfic\\/rf8R5TaX2SH9mIeVUtZ8C\",\"2020-05-22 10:44:05\",\"2020-05-22 10:44:05\"],\"sql\":\"insert into `users` (`name`, `email`, `password`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?)\",\"time\":\"5.58\",\"slow\":false,\"file\":\"D:\\\\UTA\\\\Web Data Management 5335\\\\PROJECT 5\\\\laravelv2\\\\Harsh_Complete\\\\laravel-58-from-scratch-master\\\\app\\\\Http\\\\Controllers\\\\Auth\\\\RegisterController.php\",\"line\":69,\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:44:05'),
+(70, '909f6e4a-8681-41ed-a61c-aa3384af6c00', '909f6e4a-8ba1-4026-9036-c950e8b6e0d8', NULL, 1, 'model', '{\"action\":\"created\",\"model\":\"App\\\\User:1\",\"hostname\":\"DESKTOP-F6MTDEL\"}', '2020-05-22 10:44:05'),
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+INSERT INTO `telescope_entries` (`sequence`, `uuid`, `batch_id`, `family_hash`, `should_display_on_index`, `type`, `content`, `created_at`) VALUES
+-- Table structure for table `telescope_entries_tags`
+CREATE TABLE `telescope_entries_tags` (
+-- Dumping data for table `telescope_entries_tags`
+-- Table structure for table `telescope_monitoring`
+CREATE TABLE `telescope_monitoring` (
+-- Table structure for table `users`
+CREATE TABLE `users` (
+  `created_at` timestamp NULL DEFAULT NULL,
+-- Dumping data for table `users`
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+-- Indexes for dumped tables
+-- Indexes for table `abouts`
+ALTER TABLE `abouts`
+-- Indexes for table `blogs`
+ALTER TABLE `blogs`
+-- Indexes for table `companies`
+ALTER TABLE `companies`
+-- Indexes for table `contacts`
+ALTER TABLE `contacts`
+-- Indexes for table `customers`
+ALTER TABLE `customers`
+-- Indexes for table `experiences`
+ALTER TABLE `experiences`
+-- Indexes for table `jobs`
+ALTER TABLE `jobs`
+-- Indexes for table `migrations`
+ALTER TABLE `migrations`
+-- Indexes for table `password_resets`
+ALTER TABLE `password_resets`
+-- Indexes for table `projects`
+ALTER TABLE `projects`
+-- Indexes for table `services`
+ALTER TABLE `services`
+-- Indexes for table `skills`
+ALTER TABLE `skills`
+-- Indexes for table `telescope_entries`
+ALTER TABLE `telescope_entries`
+-- Indexes for table `telescope_entries_tags`
+ALTER TABLE `telescope_entries_tags`
+-- Indexes for table `users`
+ALTER TABLE `users`
+-- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT for table `abouts`
+ALTER TABLE `abouts`
+-- AUTO_INCREMENT for table `blogs`
+ALTER TABLE `blogs`
+-- AUTO_INCREMENT for table `companies`
+ALTER TABLE `companies`
+-- AUTO_INCREMENT for table `contacts`
+ALTER TABLE `contacts`
+-- AUTO_INCREMENT for table `customers`
+ALTER TABLE `customers`
+-- AUTO_INCREMENT for table `experiences`
+ALTER TABLE `experiences`
+-- AUTO_INCREMENT for table `jobs`
+ALTER TABLE `jobs`
+-- AUTO_INCREMENT for table `migrations`
+ALTER TABLE `migrations`
+-- AUTO_INCREMENT for table `projects`
+ALTER TABLE `projects`
+-- AUTO_INCREMENT for table `services`
+ALTER TABLE `services`
+-- AUTO_INCREMENT for table `skills`
+ALTER TABLE `skills`
+-- AUTO_INCREMENT for table `telescope_entries`
+ALTER TABLE `telescope_entries`
+-- AUTO_INCREMENT for table `users`
+ALTER TABLE `users`
+-- Constraints for dumped tables
+-- Constraints for table `telescope_entries_tags`
+ALTER TABLE `telescope_entries_tags`
